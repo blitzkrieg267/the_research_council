@@ -35,7 +35,7 @@ class TheCouncilResearchToolCrew:
             
             max_execution_time=None,
             llm=LLM(
-                model="gpt-4o-mini",
+                model="azure/gpt-4o-mini",
                 temperature=0.7,
             ),
             
@@ -58,7 +58,7 @@ class TheCouncilResearchToolCrew:
             
             max_execution_time=None,
             llm=LLM(
-                model="gpt-4o-mini",
+                model="azure/gpt-4o-mini",
                 temperature=0.7,
             ),
             
@@ -82,7 +82,7 @@ class TheCouncilResearchToolCrew:
             
             max_execution_time=None,
             llm=LLM(
-                model="gpt-4o-mini",
+                model="azure/gpt-4o-mini",
                 temperature=0.7,
             ),
             
@@ -105,7 +105,7 @@ class TheCouncilResearchToolCrew:
             
             max_execution_time=None,
             llm=LLM(
-                model="gpt-4o-mini",
+                model="azure/gpt-4o-mini",
                 temperature=0.7,
             ),
             
@@ -128,7 +128,7 @@ class TheCouncilResearchToolCrew:
             
             max_execution_time=None,
             llm=LLM(
-                model="gpt-4o-mini",
+                model="azure/gpt-4o-mini",
                 temperature=0.7,
             ),
             
@@ -151,7 +151,7 @@ class TheCouncilResearchToolCrew:
             
             max_execution_time=None,
             llm=LLM(
-                model="gpt-4o-mini",
+                model="azure/gpt-4o-mini",
                 temperature=0.7,
             ),
             
