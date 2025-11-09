@@ -1,54 +1,56 @@
-# TheCouncilResearchTool Crew
+# 📄 Document Summarizer
 
-Welcome to the TheCouncilResearchTool Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+A simple web application that allows you to upload documents and get AI-powered summaries using Azure OpenAI.
+
+## Features
+
+- **Document Upload**: Support for PDF, DOCX, and TXT files
+- **Text Extraction**: Automatic text extraction from uploaded documents
+- **AI Summarization**: Uses Azure OpenAI GPT-4o-mini for intelligent summaries
+- **Topic Focus**: Optional topic specification for focused summaries
+- **Content Preview**: Preview extracted content before summarization
+- **Download Results**: Download summaries as text files
 
 ## Installation
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
-
-First, if you haven't already, install uv:
-
+1. Install required dependencies:
 ```bash
-pip install uv
+pip install streamlit openai python-docx pypdf
 ```
 
-Next, navigate to your project directory and install the dependencies:
-
-(Optional) Lock the dependencies and install them by using the CLI command:
+2. Configure Azure OpenAI credentials in `.env`:
 ```bash
-crewai install
-```
-### Customizing
-
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
-- Modify `src/the_council___research_tool/config/agents.yaml` to define your agents
-- Modify `src/the_council___research_tool/config/tasks.yaml` to define your tasks
-- Modify `src/the_council___research_tool/crew.py` to add your own logic, tools and specific args
-- Modify `src/the_council___research_tool/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
-```bash
-$ crewai run
+AZURE_OPENAI_API_KEY=your_api_key_here
+AZURE_OPENAI_ENDPOINT=https://your-resource.cognitiveservices.azure.com/
+AZURE_OPENAI_API_VERSION=2024-12-01-preview
 ```
 
-This command initializes the the_council___research_tool Crew, assembling the agents and assigning them tasks as defined in your configuration.
+## Usage
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+1. Start the application:
+```bash
+streamlit run app.py
+```
 
-## Understanding Your Crew
+2. Upload your documents (PDF, DOCX, or TXT files)
 
-The the_council___research_tool Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+3. Optionally specify a topic to focus the summary
 
-## Support
+4. Click "Generate Summary" to process the documents and create an AI summary
 
-For support, questions, or feedback regarding the TheCouncilResearchTool Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+5. Download the summary if needed
 
-Let's create wonders together with the power and simplicity of crewAI.
+## Supported File Formats
+
+- **PDF**: Portable Document Format files
+- **DOCX/DOC**: Microsoft Word documents
+- **TXT**: Plain text files
+
+## Azure OpenAI Configuration
+
+The application uses Azure OpenAI with the following configuration:
+- **Model**: GPT-4o-mini
+- **API Version**: 2024-12-01-preview
+- **Endpoint**: Your Azure OpenAI resource endpoint
+
+Make sure your Azure OpenAI resource has the GPT-4o-mini model deployed and accessible.

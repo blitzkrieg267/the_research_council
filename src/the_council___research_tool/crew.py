@@ -1,6 +1,6 @@
 import os
+from dotenv import load_dotenv
 
-from crewai import LLM
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai_tools import (
@@ -8,6 +8,9 @@ from crewai_tools import (
 	ArxivPaperTool,
 	FileReadTool
 )
+from azure_llm import CustomAzureLLM
+
+load_dotenv()
 
 
 
@@ -34,8 +37,8 @@ class TheCouncilResearchToolCrew:
             max_rpm=None,
             
             max_execution_time=None,
-            llm=LLM(
-                model="azure/gpt-4o-mini",
+            llm=CustomAzureLLM(
+                model="gpt-4o-mini",
                 temperature=0.7,
             ),
             
@@ -57,8 +60,8 @@ class TheCouncilResearchToolCrew:
             max_rpm=None,
             
             max_execution_time=None,
-            llm=LLM(
-                model="azure/gpt-4o-mini",
+            llm=CustomAzureLLM(
+                model="gpt-4o-mini",
                 temperature=0.7,
             ),
             
@@ -66,11 +69,11 @@ class TheCouncilResearchToolCrew:
     
     @agent
     def external_research_specialist(self) -> Agent:
-        
+
         return Agent(
             config=self.agents_config["external_research_specialist"],
-            
-            
+
+
             tools=[				ScrapeWebsiteTool(),
 				ArxivPaperTool()],
             reasoning=False,
@@ -79,22 +82,22 @@ class TheCouncilResearchToolCrew:
             allow_delegation=False,
             max_iter=25,
             max_rpm=None,
-            
+
             max_execution_time=None,
-            llm=LLM(
-                model="azure/gpt-4o-mini",
+            llm=CustomAzureLLM(
+                model="gpt-4o-mini",
                 temperature=0.7,
             ),
-            
+
         )
-    
+
     @agent
     def research_critic_and_evaluator(self) -> Agent:
-        
+
         return Agent(
             config=self.agents_config["research_critic_and_evaluator"],
-            
-            
+
+
             tools=[],
             reasoning=False,
             max_reasoning_attempts=None,
@@ -102,22 +105,22 @@ class TheCouncilResearchToolCrew:
             allow_delegation=False,
             max_iter=25,
             max_rpm=None,
-            
+
             max_execution_time=None,
-            llm=LLM(
-                model="azure/gpt-4o-mini",
+            llm=CustomAzureLLM(
+                model="gpt-4o-mini",
                 temperature=0.7,
             ),
-            
+
         )
-    
+
     @agent
     def research_gap_analyst(self) -> Agent:
-        
+
         return Agent(
             config=self.agents_config["research_gap_analyst"],
-            
-            
+
+
             tools=[],
             reasoning=False,
             max_reasoning_attempts=None,
@@ -125,22 +128,22 @@ class TheCouncilResearchToolCrew:
             allow_delegation=False,
             max_iter=25,
             max_rpm=None,
-            
+
             max_execution_time=None,
-            llm=LLM(
-                model="azure/gpt-4o-mini",
+            llm=CustomAzureLLM(
+                model="gpt-4o-mini",
                 temperature=0.7,
             ),
-            
+
         )
-    
+
     @agent
     def research_synthesizer(self) -> Agent:
-        
+
         return Agent(
             config=self.agents_config["research_synthesizer"],
-            
-            
+
+
             tools=[],
             reasoning=False,
             max_reasoning_attempts=None,
@@ -148,13 +151,13 @@ class TheCouncilResearchToolCrew:
             allow_delegation=False,
             max_iter=25,
             max_rpm=None,
-            
+
             max_execution_time=None,
-            llm=LLM(
-                model="azure/gpt-4o-mini",
+            llm=CustomAzureLLM(
+                model="gpt-4o-mini",
                 temperature=0.7,
             ),
-            
+
         )
     
 

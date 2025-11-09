@@ -5,7 +5,20 @@ description = "the_council___research_tool using crewAI"
 authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.10,<3.14"
 dependencies = [
-    "crewai[tools]==1.4.1"
+    "crewai[tools]==1.4.1",
+    "python-dotenv",
+    "streamlit",
+    "openai",
+    "langchain",
+    "langchain-community",
+    "chromadb",
+    "sentence-transformers",
+    "pypdf",
+    "python-docx",
+    "openpyxl",
+    "faiss-cpu",
+    "unstructured[local-inference]",
+    "requests"
 ]
 
 [project.scripts]
@@ -15,6 +28,7 @@ train = "the_council___research_tool.main:train"
 replay = "the_council___research_tool.main:replay"
 test = "the_council___research_tool.main:test"
 run_with_trigger = "the_council___research_tool.main:run_with_trigger"
+run_summarizer_ui = "the_council___research_tool.streamlit_app:main"
 
 [build-system]
 requires = ["hatchling"]
