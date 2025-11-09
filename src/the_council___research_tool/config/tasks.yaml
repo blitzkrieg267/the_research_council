@@ -1,0 +1,84 @@
+---
+process_research_content:
+  description: Process the user's research content on {research_topic}. If {research_content}
+    is provided by the user, organize and structure this content for analysis. Additionally,
+    if research documents are uploaded, use document parsing tools to extract additional
+    content. If neither is available, conduct initial web research on {research_topic}.
+    Focus on organizing all available information in a structured format for further
+    analysis.
+  expected_output: A structured research report containing the user's provided content
+    on {research_topic}, any extracted document content, and/or web research findings.
+    Include organized sections for key points, methodologies, findings, and any research
+    questions or hypotheses presented. Present all information in a clear, structured
+    format ready for analysis by subsequent agents.
+  agent: research_content_processor
+summarize_research_content:
+  description: 'Create detailed summaries of all parsed research content on {research_topic}.
+    For each document, generate a structured summary that includes: key findings,
+    research methodology, main conclusions, limitations, and significance. Then create
+    an overarching summary that highlights common themes, recurring findings, and
+    the collective insights from all uploaded materials.'
+  expected_output: Individual summaries for each document and a comprehensive overview
+    summary in markdown format. Each summary should include key findings, methodology,
+    conclusions, and relevance to {research_topic}. The overview should highlight
+    common patterns, themes, and collective insights across all materials.
+  agent: research_summarizer
+  context:
+  - process_research_content
+conduct_external_research:
+  description: Perform comprehensive external research on {research_topic} to complement
+    the uploaded materials. Search for recent academic papers, industry reports, and
+    authoritative sources to identify current trends, new developments, alternative
+    perspectives, and additional research that provides context to the uploaded documents.
+    Focus on finding both supporting and contrasting evidence.
+  expected_output: A detailed research report in markdown format containing recent
+    findings, current state of research in {research_topic}, key external sources
+    that complement the uploaded materials, and identification of external research
+    that either supports or challenges the findings in the uploaded documents.
+  agent: external_research_specialist
+  context:
+  - summarize_research_content
+critique_research_quality:
+  description: Provide rigorous critical analysis of all research materials on {research_topic},
+    both uploaded and externally sourced. Evaluate methodological rigor, statistical
+    validity, potential biases, sample sizes, research design appropriateness, and
+    logical consistency of conclusions. Identify strengths and weaknesses in each
+    study and assess the overall quality of evidence presented.
+  expected_output: A comprehensive critical analysis report in markdown format detailing
+    the methodological strengths and weaknesses of each piece of research, assessment
+    of evidence quality, identification of potential biases, and overall evaluation
+    of the research landscape quality for {research_topic}.
+  agent: research_critic_and_evaluator
+  context:
+  - summarize_research_content
+  - conduct_external_research
+identify_research_gaps:
+  description: Analyze all research materials on {research_topic} to identify knowledge
+    gaps, unexplored areas, methodological limitations, and research opportunities.
+    Compare what has been studied versus what needs investigation, identify contradictory
+    findings that require resolution, and suggest priority areas for future research
+    that would advance understanding of {research_topic}.
+  expected_output: A detailed gap analysis report in markdown format identifying specific
+    knowledge gaps, unexplored research areas, methodological improvements needed,
+    contradictions requiring resolution, and prioritized recommendations for future
+    research directions in {research_topic}.
+  agent: research_gap_analyst
+  context:
+  - summarize_research_content
+  - conduct_external_research
+synthesize_research_findings:
+  description: Create a comprehensive synthesis of all research analysis on {research_topic}
+    by integrating insights from document summaries, external research, critical analysis,
+    and gap identification. Develop a cohesive narrative that presents the current
+    state of knowledge, reconciles conflicting findings, highlights areas of consensus,
+    and provides clear conclusions about what is known and unknown in {research_topic}.
+  expected_output: A comprehensive research synthesis report in markdown format that
+    serves as the definitive analysis of {research_topic} based on all available materials.
+    The report should include executive summary, current state of knowledge, key findings
+    and consensus, areas of debate or uncertainty, critical limitations, identified
+    gaps, and strategic recommendations for the field.
+  agent: research_synthesizer
+  context:
+  - critique_research_quality
+  - identify_research_gaps
+  - conduct_external_research
