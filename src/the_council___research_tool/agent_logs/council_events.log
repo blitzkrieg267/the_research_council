@@ -1,0 +1,336 @@
+
+[2025-11-09T15:09:12.039261] COUNCIL - SESSION_START
+Event ID: council_session_start_1762693752039
+
+CONTENT:
+Starting enhanced research council on: AI goods
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:09:12.040216] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762693752040
+
+CONTENT:
+Phase 1: Query Refinement - Creating targeted search queries
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:09:24.349406] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762693764349
+
+CONTENT:
+Phase 2: Enhanced Tavily Research - Search, Extract, Embed, Summarize
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:10:18.727133] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762693818727
+
+CONTENT:
+Phase 3: Iterative Question-Based Analysis (1 iterations)
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:10:18.728624] COUNCIL - ITERATION_START
+Event ID: council_iteration_start_1762693818728
+
+CONTENT:
+Iteration 1/1: Question-Based Analysis
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:12:42.544770] COUNCIL - ERROR
+Event ID: council_error_1762693962544
+
+CONTENT:
+Session error: object of type 'int' has no len()
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:23:42.322808] COUNCIL - SESSION_START
+Event ID: council_session_start_1762694622322
+
+CONTENT:
+Starting enhanced research council on: artificial intelligence ethics
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:23:42.323730] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762694622323
+
+CONTENT:
+Phase 1: Query Refinement - Creating targeted search queries
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:23:50.807502] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762694630807
+
+CONTENT:
+Phase 2: Enhanced Tavily Research - Search, Extract, Embed, Summarize
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:39:19.298525] COUNCIL - SESSION_START
+Event ID: council_session_start_1762695559298
+
+CONTENT:
+Starting document analysis council for: tmpamzfz3zv.pdf
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:39:19.299686] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762695559299
+
+CONTENT:
+Phase 1: Document Ingestion - parsing, chunking, and embedding document
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:39:23.644703] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762695563644
+
+CONTENT:
+Phase 2: Summarizer Agent - creating initial document analysis
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:39:31.955464] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762695571955
+
+CONTENT:
+Phase 3: Critique Agent - iterative analysis improvement
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:39:31.956516] COUNCIL - ITERATION_START
+Event ID: council_iteration_start_1762695571956
+
+CONTENT:
+Iteration 1/2: Improving analysis
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:39:31.958495] COUNCIL - ERROR
+Event ID: council_error_1762695571958
+
+CONTENT:
+Session error: name 'topic' is not defined
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:50:28.796369] COUNCIL - SESSION_START
+Event ID: council_session_start_1762696228796
+
+CONTENT:
+Starting document analysis council for: tmprurgmwiv.pdf
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:50:28.797430] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762696228797
+
+CONTENT:
+Phase 1: Document Ingestion - parsing, chunking, and embedding document
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:50:40.801667] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762696240801
+
+CONTENT:
+Phase 2: Summarizer Agent - creating initial document analysis
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:50:48.077710] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762696248077
+
+CONTENT:
+Phase 3: Critique Agent - iterative analysis improvement
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:50:48.079296] COUNCIL - ITERATION_START
+Event ID: council_iteration_start_1762696248079
+
+CONTENT:
+Iteration 1/3: Improving analysis
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:50:48.083519] COUNCIL - ERROR
+Event ID: council_error_1762696248083
+
+CONTENT:
+Session error: name 'topic' is not defined
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:51:29.807123] COUNCIL - SESSION_START
+Event ID: council_session_start_1762696289807
+
+CONTENT:
+Starting enhanced research council on: AI in schools
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:51:29.807817] COUNCIL - PHASE_START
+Event ID: council_phase_start_1762696289807
+
+CONTENT:
+Phase 1: Query Refinement - Creating targeted search queries
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:51:33.738699] COUNCIL - ERROR
+Event ID: council_error_1762696293738
+
+CONTENT:
+Session error: 'TavilyAgent' object has no attribute 'search_and_extract'
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================

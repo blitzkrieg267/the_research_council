@@ -1,0 +1,68 @@
+
+[2025-11-09T15:39:19.300085] DOCUMENT_AGENT - ACTION
+Event ID: document_agent_action_1762695559300
+
+CONTENT:
+Loading and embedding document: tmpamzfz3zv.pdf (.pdf)
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:39:23.643286] DOCUMENT_AGENT - RESULT
+Event ID: document_agent_result_1762695563643
+
+CONTENT:
+Document processed and embedded successfully
+
+METADATA:
+{
+  "filename": "tmpamzfz3zv.pdf",
+  "file_type": ".pdf",
+  "chunks_created": 37,
+  "source_documents": 18,
+  "embedding_model": "text-embedding-ada-002"
+}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:50:28.797813] DOCUMENT_AGENT - ACTION
+Event ID: document_agent_action_1762696228797
+
+CONTENT:
+Loading and embedding document: tmprurgmwiv.pdf (.pdf)
+
+METADATA:
+{}
+
+EFFORT DETAILS:
+{}
+
+================================================================================
+
+[2025-11-09T15:50:40.800470] DOCUMENT_AGENT - RESULT
+Event ID: document_agent_result_1762696240800
+
+CONTENT:
+Document processed and embedded successfully
+
+METADATA:
+{
+  "filename": "tmprurgmwiv.pdf",
+  "file_type": ".pdf",
+  "chunks_created": 37,
+  "source_documents": 18,
+  "embedding_model": "text-embedding-ada-002"
+}
+
+EFFORT DETAILS:
+{}
+
+================================================================================

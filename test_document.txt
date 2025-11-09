@@ -1,0 +1,16 @@
+This is a test research document for the Council Research Tool.
+
+Research Topic: Artificial Intelligence in Healthcare
+
+Key Findings:
+1. AI can improve diagnostic accuracy by up to 30%
+2. Machine learning algorithms show promise in drug discovery
+3. Ethical considerations must be addressed in AI healthcare applications
+
+Methodology:
+- Systematic review of 50 peer-reviewed articles
+- Meta-analysis of clinical trial data
+- Expert interviews with healthcare professionals
+
+Conclusions:
+The integration of AI in healthcare systems has significant potential but requires careful implementation to ensure patient safety and ethical standards.
